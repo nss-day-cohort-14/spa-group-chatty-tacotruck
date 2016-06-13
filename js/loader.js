@@ -6,7 +6,6 @@ var chatty = (function(messages) {
   fiveMessagesRequest.open("GET", "messages.json");
   fiveMessagesRequest.send();
   fiveMessagesRequest.addEventListener("load", loadMessagesPage);
-  
   function loadMessagesPage() {
     // to create message array from messages object
     messages = JSON.parse(event.target.responseText).messages;
@@ -18,9 +17,14 @@ var chatty = (function(messages) {
       </div>
     `
     };  
-  };  
+  };
+  return{
+   getMessages: function() {
+    return messages
+  }  
+}
 
-
+return chatty
     
 
     
