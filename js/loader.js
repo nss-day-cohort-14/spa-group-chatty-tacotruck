@@ -6,12 +6,10 @@ var chatty = (function(messages) {
   fiveMessagesRequest.open("GET", "messages.json");
   fiveMessagesRequest.send();
   fiveMessagesRequest.addEventListener("load", loadMessagesPage);
-
+  
   function loadMessagesPage() {
     // to create message array from messages object
     messages = JSON.parse(event.target.responseText).messages;
-    console.log("messagesObject", messages);
-    console.log('outputDiv', outputDiv);
     for (var i=0; i<messages.length; i++) {
       counter++
       outputDiv.innerHTML += `
@@ -19,12 +17,11 @@ var chatty = (function(messages) {
         <button id="deleteButton">delete</button>
       </div>
     `
-    console.log("counter", counter);
     };  
   };  
 
 
-    return messages
+    
 
     
 }(chatty || {}))
