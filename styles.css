@@ -1,3 +1,7 @@
+nav{
+	height: 80px;
+	background-color: blue;
+}
 img {
     width: 100%;
     display: inline-block;
@@ -61,10 +65,10 @@ input {
 	background-color: darkgray;
 	color: white;
 }
-.nav-container{
+/*.nav-container{
 	display: block;
 }
 .container {
 	margin-top: 20%
-}
+}*/
 

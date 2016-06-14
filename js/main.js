@@ -5,17 +5,14 @@ var bodyColor = document.getElementById("body");
 var bodyTextSize = document.getElementById("body");
 
 function toggleBackground() {
-  console.log("toggle");
   body.classList.toggle("bodyColorChange");
 };
 
 function toggleTextSize() {
-  console.log("large text");
   body.classList.toggle("textSizeChange");
 };
 
 function clearMessages() {
-  console.log("clear Messages");
   outputDiv.innerHTML = "";
 };
 
