@@ -2,5 +2,5 @@
 
 var userInput = document.getElementById("userInput").value;
 var userOutputDiv = document.getElementById("userOutputDiv");
-var submitButton = document.getElementById("submitButton").addEventListener("click", chatty.addMessages(userInput));
+
 

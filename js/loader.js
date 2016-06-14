@@ -1,3 +1,4 @@
+
 var counter = null;
 var chatty = (function(messages) {
   var outputDiv = document.getElementById("userOutputDiv");
@@ -9,7 +10,7 @@ var chatty = (function(messages) {
   function loadMessagesPage() {
     // to create message array from messages object
     messages = JSON.parse(event.target.responseText).messages;
-    for (var i=0; i<messages.length; i++) {
+    for (var i=0; i<messages.length; i++) {
       counter++
       outputDiv.innerHTML += `
       <div id = "message--${counter}">${messages[i].name}
@@ -27,7 +28,5 @@ var chatty = (function(messages) {
 return chatty
     
 
-
     
-
 }(chatty || {}))
