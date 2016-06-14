@@ -1,3 +1,7 @@
+body {
+    font-family: calibri;
+}
+
 img {
     width: 100%;
     display: inline-block;
@@ -35,19 +39,17 @@ input {
 }
 
 .textSizeChange {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 
-.message-card {
-    margin: 2em;
-}
 
 #userOutputDiv {
 
     margin: auto;
     margin-top: 3em;
     width: 90%;
+    min-height: 10em;
     border-radius 5%;
     border: 2px solid black;
 }
@@ -61,10 +63,12 @@ input {
 	background-color: darkgray;
 	color: white;
 }
-.nav-container{
-	display: block;
-}
-.container {
-	margin-top: 20%
+
+#userOutputDiv > div {
+    margin: .5em;
 }
 
+label {
+    margin: .5em;
+
+}
