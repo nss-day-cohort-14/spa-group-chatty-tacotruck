@@ -1,16 +1,19 @@
-var chatty = (function(messages) {
+var inputText = document.getElementById("input")
+var chatty = (function(originalFunction) {
+    inputText.addEventListener("change", function() {
+        var inputObject = {}
+				var messagesArray = chatty.getMessages();
+        inputObject.name = input.value;
+        messagesArray.push(inputObject);
+        input.value = ""
+        outputDiv.innerHTML = ""
+        populateMessagesDiv(messagesArray);
 
 
-	var inputText = document.getElementById("userInput")
-	inputText.addEventListener("change", function() {
-		var input = inputText.value;
-		var messagesArray = chatty.getMessages();
-		console.log(messagesArray)
-	});
+    });
 
-	
-
-    return messages;
+    
+    return originalFunction;
 
 }(chatty || {}))
 
