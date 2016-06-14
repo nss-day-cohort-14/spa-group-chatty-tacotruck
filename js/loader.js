@@ -1,5 +1,5 @@
 var counter = null;
-var outputDiv = document.getElementById("userOutputDiv");
+var outputDiv = document.getElementById('userOutputDiv')
 var chatty = (function() {
   var messages = [];
   return{
@@ -13,6 +13,7 @@ var chatty = (function() {
     fiveMessagesRequest.send();
     fiveMessagesRequest.addEventListener("load", function(){
       messages = JSON.parse(event.target.responseText).messages;
+      console.log("messages",messages);
       callbackFunction(messages)
     })
   }
