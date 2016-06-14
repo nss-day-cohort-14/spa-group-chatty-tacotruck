@@ -58,7 +58,7 @@ img {
 #userOutputDiv {
     display: block;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 15em;
     width: 90%;
     min-height: 10em;
     border-radius 5%;
@@ -77,6 +77,7 @@ img {
 	color: white;
 }
 
+
 #userOutputDiv > div {
     margin: .5em;
 }
@@ -84,5 +85,6 @@ img {
 label {
     margin: .5em;
 }
+
 
 
