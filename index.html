@@ -4,16 +4,23 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
+
+
+
+
+
 </head>
 <body id="body">
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
+  <div class="container">
+    <nav class="navbar navbar-default navbar-fixed-top m-t-2">
       <div class="logo">
-        <img src="http://www.chatty.cz/wp-content/themes/ultimate/images/logo.svg" alt="">
+        
       </div>
-      <div >
-          <input type="text" placeholder="Enter message and press enter" id="userInput">
+      <div id="userInput">
+          <input type="text" placeholder="Enter message and press enter" id="input">
       </div>
       <div class="button">
         <button class="navbar-btn">Clear Messages</button>
@@ -23,10 +30,16 @@
   <h1 id="messages-header">Messages:</h1>
   <div id="userOutputDiv"></div>
 
-
-  <label><input type="checkbox" id="darkTheme" class="checkbox" value="darkTheme">Dark Theme</label>
-  <label><input type="checkbox" id="largeText" class="checkbox" value="largeText">Large Text</label>
-
+  <div class="footer-container">
+  
+  <div class="checkbox">
+    <label><input type="checkbox" id="largeText" value="largeText">Large Text</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" id="darkTheme" value="darkTheme">Dark Theme</label>
+  </div>
+    
+  </div>
 
   <script src = "js/loader.js"></script>
   <script src = "js/addMessage.js"></script>
@@ -34,5 +47,4 @@
   <script src = "js/main.js"></script>
 </body>
 </html>
-
 

@@ -30,8 +30,8 @@ function populateMessagesDiv() {
   for (var i=0; i<messages.length; i++) {
       counter++
       outputDiv.innerHTML += `
-      <div id = "message--${counter}">${messages[i].name}
-        <button id="deleteButton">delete</button>
+      <div id = "message--${counter}" class="message-card">${messages[i].name}
+        <button id="deleteButton--${counter}">delete</button>
       </div>
     `
     };  
