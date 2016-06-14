@@ -1,0 +1,70 @@
+img {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+#userInput {
+    margin-left: 2%;
+    margin-top: 3%;
+    display: inline-block;
+    width: 60%;
+    height: 75px
+}
+input {
+    width: 100%;
+    height: 50%;
+}
+.button {
+    margin-left: 2%;
+    display: inline-block;
+}
+.logo {
+    float: left;
+    display: inline-block;
+    width: 20%
+}
+
+.bodyColorChange {
+    background-color: darkgray;
+    color: white;
+}
+
+.bodyColorChange #userInput, .bodyColorChange  {
+    color: black;
+}
+
+.textSizeChange {
+    font-size: 2em;
+}
+
+
+.message-card {
+    margin: 2em;
+}
+
+#userOutputDiv {
+
+    margin: auto;
+    margin-top: 3em;
+    width: 90%;
+    border-radius 5%;
+    border: 2px solid black;
+}
+
+.footer-container {
+    width: 80%;
+    margin: auto;
+}
+
+.bodyColorChange {
+	background-color: darkgray;
+	color: white;
+}
+.nav-container{
+	display: block;
+}
+.container {
+	margin-top: 20%
+}
+
