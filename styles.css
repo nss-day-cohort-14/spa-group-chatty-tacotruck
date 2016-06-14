@@ -50,6 +50,7 @@ input {
     width: 90%;
     border-radius 5%;
     border: 2px solid black;
+    height: 30em;
 }
 
 .footer-container {
@@ -61,10 +62,8 @@ input {
 	background-color: darkgray;
 	color: white;
 }
-.nav-container{
-	display: block;
-}
-.container {
-	margin-top: 20%
-}
 
+.theDiv {
+    font-family: helvetica;
+    margin: 1em;
+}
