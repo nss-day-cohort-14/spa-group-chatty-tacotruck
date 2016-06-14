@@ -21,13 +21,11 @@ var chatty = (function(originalFunction) {
         <button id="deleteButton--${counter}">delete</button>
       </div>
     `
-   	} else {
+		} else {
 					messagesArray = chatty.getMessages();
 					populateOnEnter();
 				}
-			
-    	
-    	}
+			}
     })
   clearMessagesButton.addEventListener('click', function(){
   	 cleared = true;
