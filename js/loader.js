@@ -15,9 +15,9 @@ var chatty = (function() {
         messages = JSON.parse(event.target.responseText).messages;
         console.log("messages",messages);
         callbackFunction(messages)
-      });
-    };
-  };
+      })
+    }
+  }
   return chatty
 }());
 
