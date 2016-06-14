@@ -24,3 +24,12 @@ input {
 	display: inline-block;
 	width: 20%
 }
+
+.bodyColorChange {
+	background-color: darkgray;
+	color: white;
+}
+
+.textSizeChange {
+	font-size: 1.25em;
+}
