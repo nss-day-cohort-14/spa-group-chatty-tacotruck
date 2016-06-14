@@ -15,19 +15,16 @@ var chatty = (function(originalFunction) {
 					inputObject.name = input.value;
 					messagesArray.push(inputObject);
 					input.value = "";
-  				outputDiv.innerHTML += 
-      outputDiv.innerHTML = `
-      <div id = "message--${counter}">${inputObject.name}
-        <button id="deleteButton--${counter}">delete</button>
-      </div>
-    `
-   	} else {
+  				outputDiv.innerHTML = `
+      	<div id = "message--${counter}">${inputObject.name}
+        	<button id="deleteButton--${counter}">delete</button>
+      	</div>
+    		`
+		} else {
 					messagesArray = chatty.getMessages();
 					populateOnEnter();
 				}
-			
-    	
-    	}
+			}
     })
   clearMessagesButton.addEventListener('click', function(){
   	 cleared = true;
