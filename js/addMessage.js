@@ -15,9 +15,10 @@ var chatty = (function(originalFunction) {
 					inputObject.name = input.value;
 					messagesArray.push(inputObject);
 					input.value = "";
-  				outputDiv.innerHTML = `
+  				outputDiv.innerHTML += 
+      	 `
       	<div id = "message--${counter}">${inputObject.name}
-        	<button id="deleteButton--${counter}">delete</button>
+        <button id="deleteButton--${counter}">delete</button>
       	</div>
     		`
 		} else {

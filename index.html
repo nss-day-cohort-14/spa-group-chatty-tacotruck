@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -37,3 +37,55 @@
 
 
 
+ -->
+ <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+
+
+
+
+</head>
+<body id="body">
+  <div class="nav-container">
+    <nav class="navbar navbar-default navbar-fixed-top m-t-2">
+      <div class="logo">
+        <img src="http://monafashion.sk/wp-content/uploads/2013/04/ChattyLogo2.jpg" alt="">
+      </div>
+      <div id="userInput">
+          <input type="text" placeholder="Enter message and press enter" id="input">
+      </div>
+      <div class="button">
+        <button class="navbar-btn" id="clearMessagesButton">Clear Messages</button>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+  <h1 id="messages-header">Messages:</h1>
+  <div id="userOutputDiv"></div>
+
+  <div class="footer-container">
+  
+  <div class="checkbox">
+    <label><input type="checkbox" id="largeText" value="largeText">Large Text</label>
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox" id="darkTheme" value="darkTheme">Dark Theme</label>
+  </div>
+    
+  </div>
+  </div>
+
+  <script src = "js/loader.js"></script>
+  <script src = "js/addMessage.js"></script>
+  <script src = "js/deleteMessage.js"></script>
+  <script src = "js/main.js"></script>
+</body>
+</html>
