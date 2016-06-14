@@ -10,7 +10,7 @@
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="logo">
-        <!-- <img src="http://www.chatty.cz/wp-content/themes/ultimate/images/logo.svg" alt=""> -->
+        <img src="http://www.chatty.cz/wp-content/themes/ultimate/images/logo.svg" alt=""> 
       </div>
       <div id="userInput">
           <input type="text" placeholder="Enter message and press enter" id="input" >
@@ -20,12 +20,19 @@
       </div>
     </div>
   </nav>
-  <h1 id="messages-header">Messages:</h1>
+
+
+
+
   <div id="userOutputDiv"></div>
 
-
-  <label><input type="checkbox" id="darkTheme" class="checkbox" value="darkTheme">Dark Theme</label>
-  <label><input type="checkbox" id="largeText" class="checkbox" value="largeText">Large Text</label>
+  
+    <div class="footer-container">
+    <label for="darkTheme">Dark Theme</label>
+    <input type="checkbox" id=darkTheme class="checkbox" value="darkTheme" name="darkTheme">
+    <label for="largeText">Large Text</label>
+    <input type="checkbox" name="largeText" id="largeText" class="checkbox" value="largeText"> 
+  </div>
 
 
   <script src = "js/loader.js"></script>
