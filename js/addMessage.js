@@ -6,7 +6,6 @@ var chatty = (function(originalFunction) {
         inputObject.name = input.value;
         messagesArray.push(inputObject);
         input.value = ""
-        console.log(messagesArray);
         outputDiv.innerHTML = ""
         populateMessagesDiv(messagesArray);
 
