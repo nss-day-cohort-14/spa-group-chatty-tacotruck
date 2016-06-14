@@ -6,7 +6,7 @@
   <title></title>
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="body">
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
       <div class="logo">
@@ -23,8 +23,11 @@
   <h1 id="messages-header">Messages:</h1>
   <div id="userOutputDiv"></div>
 
-  <input type="checkbox" name="vehicle" value="darkTheme">Dark Theme<br>
-  <input type="checkbox" name="vehicle" value="largeText">Large Text<br>
+
+  <label><input type="checkbox" id="darkTheme" class="checkbox" value="darkTheme">Dark Theme</label>
+  <label><input type="checkbox" id="largeText" class="checkbox" value="largeText">Large Text</label>
+
+
   <script src = "js/loader.js"></script>
   <script src = "js/addMessage.js"></script>
   <script src = "js/deleteMessage.js"></script>
