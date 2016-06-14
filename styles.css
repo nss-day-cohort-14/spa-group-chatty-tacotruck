@@ -1,5 +1,17 @@
+
+
 body {
     font-family: calibri;
+    margin: 0;
+}
+
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: block;
+    background: white;
+    padding: 2em;
 }
 
 img {
@@ -43,11 +55,10 @@ img {
 }
 
 
-
 #userOutputDiv {
-
+    display: block;
     margin: auto;
-    margin-top: 3em;
+    margin-top: 200px;
     width: 90%;
     min-height: 10em;
     border-radius 5%;
@@ -72,5 +83,6 @@ img {
 
 label {
     margin: .5em;
-
 }
+
+
