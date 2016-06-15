@@ -11,17 +11,18 @@ var chatty = (function(originalFunction) {
 				if (cleared===true){
 					counter = 0;
 					counter ++;
-					messagesArray.push(inputText.value);
+					// messagesArray.push(inputText.value);
+          inputObject.name = input.value;
+          messagesArray.push(inputObject);
 					input.value = "";
           outputDiv.innerHTML = ""
-  				for (let i =0; i < messagesArray.length; i++){
+          for (let i =0; i < messagesArray.length; i++){
             outputDiv.innerHTML +=
-      	 `
-      	<div id = "message--${counter}">${messagesArray[i]}
+           `
+        <div id = "message--${counter}">${messagesArray[i]}
         <button id="deleteButton--${counter}">delete</button>
         </div>`
       }
-  				
 		} else {
           inputObject.name = input.value;
           messagesArray.push(inputObject);
@@ -35,16 +36,16 @@ var chatty = (function(originalFunction) {
         `
         return inputObject
           }
-  
+
 				}
 			}
     })
   clearMessagesButton.addEventListener('click', function(){
-  	 cleared = true;
-     messagesArray = []
-  	 outputDiv.innerHTML = "";
-  	 return cleared;
-  	})
+    cleared = true;
+    messagesArray = []
+    outputDiv.innerHTML = "";
+    return cleared;
+  })
   return originalFunction;
 
 }(chatty || {}))
