@@ -24,12 +24,13 @@ var chatty = (function() {
 chatty.loadMessagesPage(populateMessagesDiv)
 
 function populateMessagesDiv() {
+  counter = 0;
   messages = chatty.getMessages();
   var outputDiv = document.getElementById("userOutputDiv");
   for (var i=0; i<messages.length; i++) {
     counter++
     outputDiv.innerHTML += `
-    <div id = "message--${counter}">${messages[i].name}
+    <div class="message-container" id = "message--${counter}"><p class="text">${messages[i].user}: ${messages[i].message}</p>
       <button id="deleteButton">delete</button>
     </div>
     `

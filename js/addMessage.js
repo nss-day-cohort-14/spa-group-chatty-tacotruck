@@ -1,51 +1,35 @@
-var inputObject = {};
-var messagesArray= []
 var cleared = false;
-var inputText = document.getElementById("input");
-var clearMessagesButton = document.getElementById("clearMessagesButton");
+var input = document.getElementById("input");
+var users = document.querySelector('.userSelect')
 var chatty = (function(originalFunction) {
 
-    inputText.addEventListener('keydown', function(e){
-			var key = e.which||e.keyCode;
-			if (key === 13){
-				if (cleared===true){
-					counter = 0;
-					counter ++;
-					// messagesArray.push(inputText.value);
-          inputObject.name = input.value;
-          messagesArray.push(inputObject);
-					input.value = "";
-          outputDiv.innerHTML = ""
-          for (let i =0; i < messagesArray.length; i++){
-            outputDiv.innerHTML +=
-           `
-        <div id = "message--${counter}">${messagesArray[i]}
-        <button id="deleteButton--${counter}">delete</button>
-        </div>`
-      }
-		} else {
-          inputObject.name = input.value;
-          messagesArray.push(inputObject);
-          input.value = ''
-          for (let i =0; i < messagesArray.length; i++){
-            outputDiv.innerHTML +=
-         `
-        <div id = "message--${counter}">${messagesArray[i].name}
-        <button id="deleteButton--${counter}">delete</button>
-        </div>
-        `
-        return inputObject
-          }
+input.addEventListener('keydown', function(e){
+	var key = e.which||e.keyCode;
+	if (key === 13){
+      var inputObject = {"user": users.value, "message": input.value};
+      counter ++;
+      messages = chatty.getMessages();
+      messages.push(inputObject);
+      outputDiv.innerHTML = ''
+      populateMessagesDiv();
+      input.value = ''
 
-				}
-			}
-    })
+			// }
+		}
+  })
   clearMessagesButton.addEventListener('click', function(){
     cleared = true;
-    messagesArray = []
+    messages.length = 0;
+    counter = 0;
     outputDiv.innerHTML = "";
+    console.log("messages",messages );
     return cleared;
+    })
+
+  users.addEventListener('change', function(){
+    console.log("messages",messages );
   })
+
   return originalFunction;
 
 }(chatty || {}))

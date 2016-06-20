@@ -1,19 +1,24 @@
 {
   "messages": [
     {
-      "name": "damn bro that was a good taco"
+      "user": "Kevin",
+      "message": "damn bro that was a good taco"
     },
     {
-      "name": "yeh man i wanna get another one 4 sure"
+      "user": "Mark",
+      "message": "yeh man i wanna get another one 4 sure"
     }, 
     {
-      "name": "same but i already ate like 4 today"
+      "user": "Kevin",
+      "message": "same but i already ate like 4 today"
     }, 
     {
-      "name": "uh huh my guts are sore af now"
+      "user": "Mark",
+      "message": "uh huh my guts are sore af now"
     }, 
     {
-      "name": "LOOOOL"
+      "user": "Kevin",
+      "message": "LOOOOL"
     }
   ]
 }
